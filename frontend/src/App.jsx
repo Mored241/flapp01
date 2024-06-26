@@ -5,11 +5,7 @@ import { useEffect } from "react";
 import { ContactList } from "./ContactList";
 import { ContactForm } from "./ContactForm";
 
-// const dataList = {
-//   "firstName":"Mored",
-//   "lastName":"Rodriguez",
-//   "email":"morodriguez@kokocha.meow"
-// }
+
 
 function App() {
   const [contacts, setContacts] = useState([]);

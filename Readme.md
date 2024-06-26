@@ -76,3 +76,6 @@ db = SQLAlchemy(app)
 $${\color{#00cec9}Enjoy ~ !}$$
 
 Why do I use `PNPM` instead of `NPM` ? Well.. It's simply because it is ~~-better-~~ faster and lightweight.
+
+***
+X: @Momodo241
