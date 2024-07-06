@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { ContactList } from "./ContactList";
@@ -44,11 +43,14 @@ function App() {
 
   return (
     <>
-      <div className="md:container md:mx-auto">
+      <div className="md:container p-10 md:mx-auto h-screen text-center m-0">
         <p className="text-3xl font-bold hover:text-purple-400 my-2 ">
-          ~ The Contact List ~
+          ~ The Contact List Manager ~
         </p>
+        
         <hr />
+
+
         <div className="rounded shadow-md bg-orange-900">
           <ContactList
             contacts={contacts}
