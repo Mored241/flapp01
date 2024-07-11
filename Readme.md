@@ -44,7 +44,7 @@ db = SQLAlchemy(app)
 
 <h3>2# Set up the Frontend: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="30" style="margin-bottom:-7;"/></h3>
 
-- Create the frontend folder in the app-folder by installing React JS
+- Create the frontend folder in the app-folder by installing <a href="https://react.dev/" style="color:#48dbfb">React JS</a> </p>
 
 <pre><code style="color:cyan;">\> <span style="color:yellow;">pnpm</span> create vite frontend --template react
 </code></pre>
