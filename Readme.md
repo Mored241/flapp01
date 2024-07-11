@@ -5,7 +5,7 @@
 <h3>1# First thing first, set up the backend:<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" width="30" style="margin-bottom:-7;"/></h3>
 
 - Create the backend folder in the app-folder
-- Then install <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> </p>, SQLAlchmy and Flask-cors
+- Then install <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a>, SQLAlchmy and Flask-cors
 
 
 <pre>
