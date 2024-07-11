@@ -61,7 +61,7 @@ db = SQLAlchemy(app)
 
 <h3> 3# Add some styling tools (optional): <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="20" style="margin-bottom:-3;" alt="Tailwind Css Icon" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg" width="20" style="margin-bottom:-3;" alt="Framer Motion Icon" /></h3>
 
-- <p>Still in the frontend side, install <a href="https://www.framer.com/motion/" style="color:skyblue">Tailwind Css</a> </p>
+- <p>Still in the frontend side, install <a href="https://tailwindcss.com/" style="color:skyblue">Tailwind Css</a> </p>
 
 <pre>
 <code style="color:skyblue;">\frontend> <span style="color:yellow;">pnpm</span> install -D tailwindcss

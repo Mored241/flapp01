@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import Contact from "./Contact";
 
 export const ContactList = ({ contacts, updateContact, updateCallback }) => {
   const onDelete = async (id) => {
@@ -44,12 +45,17 @@ export const ContactList = ({ contacts, updateContact, updateCallback }) => {
   return (
     <div className="">
       <h2>- - -</h2>
+
       <motion.table
         className="table-auto p-2 bg-dark mx-auto my-10 rounded "
         variants={container}
         initial="hidden"
         animate="visible"
       >
+        <caption class="caption-top m-2">
+          Table 10.1: List of contacts that is managed by the backend database.
+        </caption>
+
         <thead className="bg-green-700 text-[1.3em]">
           <tr>
             <th>Id</th>
@@ -64,7 +70,9 @@ export const ContactList = ({ contacts, updateContact, updateCallback }) => {
             <motion.tr
               key={contact.id}
               variants={item}
-              ayoutId={item.id} onClick={() => setSelectedId(item.id)}
+              className="hover:bg-gray-900 odd:bg-[#282828]"
+              ayoutId={item.id}
+              onClick={() => setSelectedId(item.id)}
             >
               <motion.td>{contact.id}</motion.td>
               <motion.td>{contact.firstName}</motion.td>
@@ -73,16 +81,17 @@ export const ContactList = ({ contacts, updateContact, updateCallback }) => {
               <motion.td>
                 <motion.button
                   onClick={() => updateContact(contact)}
-                  className="bg-blue-700 rounded font-bold active:bg-blue-800 hover:bg-blue-900 p-1 m-1"
+                  className="bg-blue-800 rounded font-bold active:bg-blue-900 hover:bg-blue-700 p-1 m-1"
                   initial={{ scale: 0 }}
-                  animate={{ rotate: 10, scale: 1 }}
+                  animate={{ rotate: 0, scale: 1 }}
                   transition={{
                     type: "spring",
-                    stiffness: 260,
-                    damping: 20,
+                    stiffness: 400,
+                    damping: 16,
                   }}
                   whileHover={{
-                    rotate: 0,
+                    rotate: 10, 
+                    scale: 1.1,
                   }}
                 >
                   Update
@@ -90,16 +99,16 @@ export const ContactList = ({ contacts, updateContact, updateCallback }) => {
 
                 <motion.button
                   onClick={() => onDelete(contact.id)}
-                  className="bg-red-700 rounded font-bold active:bg-red-800 hover:bg-red-900 p-1 m-1"
+                  className="bg-red-800 rounded font-bold active:bg-red-900 hover:bg-red-700 p-1 m-1"
                   initial={{ scale: 0 }}
-                  animate={{ rotate: -10, scale: 1 }}
+                  animate={{ rotate: 0, scale: 1 }}
                   transition={{
                     type: "spring",
-                    stiffness: 260,
+                    stiffness: 360,
                     damping: 20,
                   }}
                   whileHover={{
-                    rotate: 0,
+                    rotate: -10,
                   }}
                 >
                   Delete
@@ -108,10 +117,8 @@ export const ContactList = ({ contacts, updateContact, updateCallback }) => {
             </motion.tr>
           ))}
         </tbody>
-
       </motion.table>
 
-      <p className="motion-safe:animate-pulse">Copyright</p>
     </div>
   );
 };
